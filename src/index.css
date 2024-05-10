@@ -51,4 +51,10 @@
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
   }
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

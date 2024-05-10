@@ -11,11 +11,12 @@ export default function DashboardLayout() {
 
   return (
     <div
-      className={cn("h-full w-full", collapsed ? "pl-[56px]" : "pl-[220px]")}
+      className={cn("h-full overflow-hidden flex flex-col w-full", collapsed ? "pl-[56px]" : "pl-[220px]")}
     >
       <Sidebar collapsed={collapsed} />
+   
+      <div  className="w-full bg-background h-screen" >
       <Header collapsed={collapsed} toggleCollapsed={toggleCollapsed} />
-      <div className="w-full bg-background h-full">
         <Outlet />
       </div>
     </div>

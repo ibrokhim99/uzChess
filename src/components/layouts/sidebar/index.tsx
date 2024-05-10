@@ -95,7 +95,7 @@ export default function Sidebar({ collapsed }: SidebarProps) {
   return (
     <aside
       className={cn(
-        "fixed left-0 z-20 h-full inset-y flex flex-col border-r bg-background",
+        "fixed left-0 z-20 max-h-screen min-h-screen inset-y flex flex-col border-r bg-background",
         collapsed ? "w-[56px]" : "w-[220px]"
       )}
     >
